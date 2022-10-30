@@ -25,7 +25,7 @@ data <- dbGetQuery(con, query)
 # Memanggil Tabel, untuk membuat Primary Key nya berurutan.
 
 query2 <- '
-SELECT * FROM "public"."BLU"
+SELECT * FROM BLU
 '
 
 data <- dbGetQuery(con, query2)
@@ -38,3 +38,4 @@ data <- data.frame(No = (baris+1):(baris+4),
 dbWriteTable(conn = con, name = "BLU", value = data, append = TRUE, row.names = FALSE, overwrite=FALSE)
 
 on.exit(dbDisconnect(con)) 
+

@@ -28,7 +28,7 @@ jobs:
       - name: Install RPostgreSQL package
         run: Rscript -e 'install.packages("RPostgreSQL", dependencies = TRUE)'
       - name: Create and post tweet
-        run: Rscript publish.R
+        run: Rscript publishJagat.R
       # Add new files in data folder, commit along with other modified files, push
       - name: Commit and push if it changed
         run: |-

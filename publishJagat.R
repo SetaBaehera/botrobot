@@ -28,10 +28,7 @@ status_details <- paste0(
   Sys.Date(),
   ":",
   "\n",
-    data$title[2], 
-  "\n", 
-  data$caption[2],
-  "\n",
+  data$link[6],
   "\n",
   "#",samp_word)
 
@@ -52,9 +49,6 @@ alt_text <- paste0(
   "Contoh Twitter Bot tentang Dunia Games"
 )
 
-# save the data
-dir.create(file.path('data') )
-write.csv(data, file.path("data/cobasimpan.csv"))
 
 ## Post the image to Twitter
 rtweet::post_tweet(

@@ -28,7 +28,7 @@ status_details <- paste0(
   Sys.Date(),
   ":",
   "\n",
-  data$link[6],
+  data$link[7],
   "\n",
   "#",samp_word)
 
